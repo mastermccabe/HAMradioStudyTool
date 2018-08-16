@@ -1,4 +1,7 @@
 import requests
+import os
+
+import sys
 import re
 from bs4 import BeautifulSoup
 
@@ -46,15 +49,39 @@ for idx, answers in enumerate(soup.find_all('ul')):
 
     for id, correct in enumerate(answers.find_all('li','correctAnswer')):
         letter = correct.find("span","answerLabel")
-        letter = letter.text.strip()
+        letter = letter.text.strip('.')
+
         letters.append([idx,letter])
 
 
-print questions_bank[i][1]
-print answers_bank[i*4][2]
-print answers_bank[i*4+1][2]
-print answers_bank[i*4+2][2]
-print answers_bank[i*4+3][2]
+
+def quizMe():
+    i = 0
+    os.system('clear')
+    print "------Q or quit to quit----------"
+    while i < len(questions_bank):
+        print questions_bank[i][1]
+        print "------------------------------------"
+        print answers_bank[i*4][2]
+        print answers_bank[i*4+1][2]
+        print answers_bank[i*4+2][2]
+        print answers_bank[i*4+3][2]
+        print "------------------------------------"
+        # print letters[i][1] #ANSWER
+        # return
+        text = raw_input("\nEnter A,B,C,D:").decode('utf-8').upper()
+        if (text == letters[i][1]):
+            i=i+1
+            print "\n------------------------------------\n"
+            print "Correct!\n", "\n ********* QUESTION ",i+1,'******** \n'
+            print "------------------------------------"
+        elif (text == "Q" or text == 'QUIT'):
+
+            sys.exit("exiting program")
+        else:
+            print "incorrect, answer is ",letters[i][1]
+            print "\n\n RESTARTING TO QUESTION 1"
+            i = 0
 
 
-letters[i][1]
+quizMe()
