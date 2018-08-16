@@ -57,31 +57,44 @@ for idx, answers in enumerate(soup.find_all('ul')):
 
 def quizMe():
     i = 0
+    top_score = 1
+    curr_score = 0
     os.system('clear')
-    print "------Q or quit to quit----------"
+
     while i < len(questions_bank):
+        print "(q or quit to quit) \n \n"
+        print " ****************** HIGH SCORE:",top_score,"******************"
+        print  "\n ******************* QUESTION ",i+1,'*********************** \n\n'
         print questions_bank[i][1]
         print "------------------------------------"
         print answers_bank[i*4][2]
         print answers_bank[i*4+1][2]
         print answers_bank[i*4+2][2]
         print answers_bank[i*4+3][2]
-        print "------------------------------------"
+
         # print letters[i][1] #ANSWER
         # return
-        text = raw_input("\nEnter A,B,C,D:").decode('utf-8').upper()
+        text = raw_input("\nEnter A,B,C,D:  ").decode('utf-8').upper()
         if (text == letters[i][1]):
             i=i+1
-            print "\n------------------------------------\n"
-            print "Correct!\n", "\n ********* QUESTION ",i+1,'******** \n'
-            print "------------------------------------"
+            curr_score = curr_score + 1
+            if (curr_score > top_score): top_score = curr_score
+            os.system('clear')
+
+
         elif (text == "Q" or text == 'QUIT'):
 
             sys.exit("exiting program")
         else:
+            os.system('clear')
             print "incorrect, answer is ",letters[i][1]
+            print "top score of :",top_score
             print "\n\n RESTARTING TO QUESTION 1"
             i = 0
+            top_score = 0
+            curr_score = 1
+
+
 
 
 quizMe()
