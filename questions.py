@@ -39,9 +39,6 @@ j = 0
 for idx, questions in enumerate(soup.find_all('p','questionText')):
     questions_bank.append([idx,questions.text.strip()])
 
-
-
-#
 for idx, answers in enumerate(soup.find_all('ul')):
     for id, incorrect in enumerate(answers.find_all('span','noMarks')):
 
@@ -87,14 +84,12 @@ def quizMe():
             sys.exit("exiting program")
         else:
             os.system('clear')
-            print "incorrect, answer is ",letters[i][1]
+            print "************\n incorrect, answer is ",letters[i][1]
             print "top score of :",top_score
             print "\n\n RESTARTING TO QUESTION 1"
             i = 0
             top_score = 0
             curr_score = 1
-
-
 
 
 quizMe()
