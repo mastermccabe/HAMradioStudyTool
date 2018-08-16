@@ -1,0 +1,65 @@
+<p class="questionNumber">T9B04 (A)</p>
+	<p class="questionText">What is the major function of an antenna tuner (antenna coupler)?</p>
+	<ul>
+		  		<li class="correctAnswer"><span class="noMarks"><span class="answerLabel">A.</span> It matches the antenna system impedance to the transceiver's output impedance</span></li>
+	  		  		<li><span class="noMarks"><span class="answerLabel">B.</span> It helps a receiver automatically tune in weak stations</span></li>
+	  		  		<li><span class="noMarks"><span class="answerLabel">C.</span> It allows an antenna to be used on both transmit and receive</span></li>
+	  		  		<li><span class="noMarks"><span class="answerLabel">D.</span> It automatically selects the proper antenna for the frequency band being used</span></li>
+	  		</ul>
+</div>
+			</div>
+									<div class="flashCard">
+					<div class="question">
+
+
+	<p class="questionNumber">T9B05 (D)</p>
+	<p class="questionText">In general, what happens as the frequency of a signal passing through coaxial cable is increased?</p>
+	<ul>
+		  		<li><span class="noMarks"><span class="answerLabel">A.</span> The characteristic impedance decreases</span></li>
+	  		  		<li><span class="noMarks"><span class="answerLabel">B.</span> The loss decreases</span></li>
+	  		  		<li><span class="noMarks"><span class="answerLabel">C.</span> The characteristic impedance increases</span></li>
+	  		  		<li class="correctAnswer"><span class="noMarks"><span class="answerLabel">D.</span> The loss increases</span></li>
+	  		</ul>
+</div>
+			</div>
+									<div class="flashCard">
+					<div class="question">
+
+
+	<p class="questionNumber">T9B06 (B)</p>
+	<p class="questionText">Which of the following connectors is most suitable for frequencies above 400 MHz?</p>
+	<ul>
+		  		<li><span class="noMarks"><span class="answerLabel">A.</span> A UHF (PL-259/SO-239) connector</span></li>
+	  		  		<li class="correctAnswer"><span class="noMarks"><span class="answerLabel">B.</span> A Type N connector</span></li>
+	  		  		<li><span class="noMarks"><span class="answerLabel">C.</span> An RS-213 connector</span></li>
+	  		  		<li><span class="noMarks"><span class="answerLabel">D.</span> A DB-25 connector</span></li>
+	  		</ul>
+</div>
+			</div>
+									<div class="flashCard">
+					<div class="question">
+
+
+	<p class="questionNumber">T9B07 (C)</p>
+	<p class="questionText">Which of the following is true of PL-259 type coax connectors?</p>
+	<ul>
+		  		<li><span class="noMarks"><span class="answerLabel">A.</span> They are preferred for microwave operation</span></li>
+	  		  		<li><span class="noMarks"><span class="answerLabel">B.</span> They are watertight</span></li>
+	  		  		<li class="correctAnswer"><span class="noMarks"><span class="answerLabel">C.</span> They are commonly used at HF frequencies</span></li>
+	  		  		<li><span class="noMarks"><span class="answerLabel">D.</span> They are a bayonet type connector</span></li>
+	  		</ul>
+</div>
+			</div>
+									<div class="flashCard">
+					<div class="question">
+
+
+	<p class="questionNumber">T9B08 (A)</p>
+	<p class="questionText">Why should coax connectors exposed to the weather be sealed against water intrusion?</p>
+	<ul>
+		  		<li class="correctAnswer"><span class="noMarks"><span class="answerLabel">A.</span> To prevent an increase in feed line loss</span></li>
+	  		  		<li><span class="noMarks"><span class="answerLabel">B.</span> To prevent interference to telephones</span></li>
+	  		  		<li><span class="noMarks"><span class="answerLabel">C.</span> To keep the jacket from becoming loose</span></li>
+	  		  		<li><span class="noMarks"><span class="answerLabel">D.</span> All of these choices are correct</span></li>
+	  		</ul>
+</div>
